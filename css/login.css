@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: rgba(23, 36, 54, 0.8);
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+}
+
+.container {
+  width: 800px;
+  height: 500px;
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.77);
+  border-radius: 10px;
+}
+
+.primaria {
+  background-color: #192436;
+  border-radius: 10px 0px 0px 10px;
+  box-shadow: 5px 0px 5px rgba(50, 50, 50, 0.77);
+  position: relative;
+}
+
+.primaria img {
+  height: 110px;
+  margin-top: 200px;
+  margin-left: 40px;
+}
+
+.secundaria {
+  background-color: #c0c0c0;
+  border-radius: 0px 10px 10px 0px;
+  text-align: center;
+}
+
+.secundaria h3 {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 45px;
+  text-transform: uppercase;
+  margin: 90px 0;
+  margin-bottom: 60px;
+  background-color: #192436;
+  color: #ffffff;
+  box-shadow: 5px 5px 5px rgba(50, 50, 50, 0.77);
+  position: relative;
+}
+
+.secundaria .email {
+  position: relative;
+  left: -115px;
+  margin-bottom: 20px;
+}
+
+.secundaria .senha {
+  position: relative;
+  left: -120px;
+  margin-bottom: 50px;
+}
+
+.secundaria .email span {
+  color: #192436;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-right: 20px;
+}
+
+.secundaria .senha span {
+  color: #192436;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-right: 13px;
+}
+
+.secundaria div input {
+  height: 28px;
+  width: 220px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 1px;
+  padding: 0 5px;
+  letter-spacing: 1px;
+}
+
+.secundaria .senha input {
+  margin-left: 9px;
+}
+
+.secundaria .botao a {
+  background-color: #192436;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.secundaria .botao a:hover {
+  background-color: rgba(23, 36, 54, 0.8);
+  color: #ffffff;
+}
+
+.secundaria .links {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.secundaria .links span {
+  font-size: 20px;
+  color: rgba(23, 36, 54, 0.8);
+}
+
+.secundaria .links a {
+  color: #192436;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  position: relative;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.secundaria .links a:hover {
+  color: rgba(23, 36, 54, 0.8);
+}
+
+.secundaria .links a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: rgba(23, 36, 54, 0.8);
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+
+.secundaria .links a:hover::after {
+  width: 100%;
+  transition: width 700ms ease-in-out;
+}
+
+.secundaria p {
+  font-size: 15px;
+  color: #192436;
+  letter-spacing: 1px;
+}

@@ -21,9 +21,16 @@ header {
 
 .logo img {
   position: absolute;
-  top: 15px;
+  top: 13px;
   left: 110px;
   font-size: 25px;
+}
+
+.nome {
+  position: absolute;
+  font-size: 20px;
+  right: 180px;
+  top: 33px;
 }
 
 .info {

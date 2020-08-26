@@ -20,17 +20,17 @@ body {
   grid-template-columns: 1fr 1fr;
   box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.77);
   border-radius: 10px;
-  animation: up 500ms ease-out;
+  animation: up 800ms ease-out;
 }
 
 @keyframes up {
-    0% {
-        opacity: 0;
-        transform: translateY(5px);
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .primaria {
@@ -102,13 +102,14 @@ body {
   bottom: 1px;
   padding: 0 5px;
   letter-spacing: 1px;
+  outline: none;
 }
 
 .secundaria .senha input {
   margin-left: 9px;
 }
 
-.secundaria .botao a {
+.secundaria .botao button {
   background-color: #192436;
   color: #ffffff;
   padding: 10px 15px;
@@ -120,7 +121,7 @@ body {
   text-decoration: none;
 }
 
-.secundaria .botao a:hover {
+.secundaria .botao button:hover {
   background-color: rgba(23, 36, 54, 0.8);
   color: #ffffff;
 }

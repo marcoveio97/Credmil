@@ -97,12 +97,13 @@ body {
 .secundaria div input {
   height: 28px;
   width: 220px;
-  border-radius: 3px;
   position: absolute;
   bottom: 1px;
   padding: 0 5px;
-  letter-spacing: 1px;
+  letter-spacing: 0.7px;
   outline: none;
+  background-color: #c0c0c0;
+  border-bottom: 1px solid #192436;
 }
 
 .secundaria .senha input {

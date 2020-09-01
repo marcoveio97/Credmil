@@ -73,10 +73,17 @@ body {
   height: 25px;
   width: 390px;
   padding: 0 5px;
-  letter-spacing: 0.7px;
+  letter-spacing: 0.5px;
   outline: none;
   background-color: #c0c0c0;
   border-bottom: 1px solid #192436;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.secundaria input::placeholder {
+  font-weight: normal;
+  font-size: 13px;
 }
 
 .botoes {

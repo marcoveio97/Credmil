@@ -1,0 +1,22 @@
+{
+  "name": "credmil",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcoveio97/Credmil.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marcoveio97/Credmil/issues"
+  },
+  "homepage": "https://github.com/marcoveio97/Credmil#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

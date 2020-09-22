@@ -1,8 +1,10 @@
-const menuLateral = document.querySelector(".menuLateral");
-const menuLateralA = menuLateral.querySelectorAll("a");
+function mostrarAtivo(tag) {
+  const menuLateral = document.querySelector(".menuLateral");
+  const tagA = menuLateral.querySelectorAll("a");
 
-for (let a of menuLateralA) {
-  a.addEventListener("click", function () {
-    a.classList.add("active");
-  });
+  for (i = 0; i < tagA.length; i++) {
+    tagA[i].style.backgroundColor = "";
+  }
+
+  tag.style.backgroundColor = "#192436";
 }

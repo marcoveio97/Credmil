@@ -8,27 +8,27 @@ routes.get("/", function (req, res) {
 });
 
 routes.get("/login", function (req, res) {
-  return res.sendFile(__dirname + "/views/login.html");
+  return res.render("login");
 });
 
 routes.get("/cadastro", function (req, res) {
-  return res.sendFile(__dirname + "/views/cadastro.html");
+  return res.render("cadastro");
 });
 
 routes.get("/esqueci-senha", function (req, res) {
-  return res.sendFile(__dirname + "/views/senha.html");
+  return res.render("senha");
 });
 
 routes.get("/cliente", function (req, res) {
-  return res.sendFile(__dirname + "/views/cliente.html");
+  return res.render("cliente");
 });
 
 routes.get("/banco", function (req, res) {
-  return res.sendFile(__dirname + "/views/banco.html");
+  return res.render("banco");
 });
 
 routes.get("/cartorio", function (req, res) {
-  return res.sendFile(__dirname + "/views/cartorio.html");
+  return res.render("cartorio");
 });
 
 // Rotas do tipo "Post"

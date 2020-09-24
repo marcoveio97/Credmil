@@ -1,19 +1,18 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Cartório - Credmil</title>
-    <link rel="stylesheet" href="css/cartorio.css" />
-    <link
-      rel="shortcut icon"
-      href="img/credmil_icone.ico"
-      type="image/x-icon"
-    />
-  </head>
+{% extends "layout.njk" %}
 
+{% block head %}
+  <head>
+    <title>Cliente - Credmil</title>
+    <link rel="stylesheet" href="css/cliente.css"/>
+    <link rel="shortcut icon" href="img/credmil_icone.ico" type="image/x-icon"/>
+  </head>
+{% endblock %}
+
+{% block body %}
   <body>
     <header>
       <div class="logo">
-        <a href="#"><img src="img/credmil_logo.png" alt="Logo Credmil" /></a>
+        <a href="#"><img src="img/credmil_logo.png" alt="Logo Credmil"/></a>
       </div>
       <div class="nome">Marcos Silva</div>
       <div class="info">
@@ -23,9 +22,9 @@
 
     <div class="conteudo">
       <div class="menuLateral">
-        <a href="#" onclick="mostrarAtivo(this);">Selecionar Cliente</a>
+        <a href="#" onclick="mostrarAtivo(this);">Enviar Proposta</a>
         <a href="#" onclick="mostrarAtivo(this);">Central de Documentos</a>
-        <a href="#" onclick="mostrarAtivo(this);">Acompanhar Documentação</a>
+        <a href="#" onclick="mostrarAtivo(this);">Acompanhar Financiamento</a>
       </div>
       <div class="infoMenu"></div>
     </div>
@@ -36,4 +35,4 @@
 
     <script src="js/script.js"></script>
   </body>
-</html>
+{% endblock %}

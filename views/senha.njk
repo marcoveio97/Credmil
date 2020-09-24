@@ -1,0 +1,40 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+  <head>
+    <title>Esqueci Senha - Credmil</title>
+    <link rel="stylesheet" href="css/senha.css"/>
+    <link rel="shortcut icon" href="img/credmil_icone.ico" type="image/x-icon"/>
+  </head>
+{% endblock %}
+
+{% block body %}
+  <body>
+    <div class="container">
+      <div class="primaria">
+        <h1>Esqueci a senha</h1>
+      </div>
+      <form method="post" action="">
+        <div class="secundaria">
+          <div>
+            <span>E-mail:</span>
+            <input type="email" name="email" placeholder="Digite seu e-mail..."/>
+          </div>
+          <div>
+            <span>Nova senha:</span>
+            <input type="password" name="senhaNova" placeholder="Digite sua nova senha..." maxlength="15"/>
+          </div>
+          <div>
+            <span>Confirmar nova senha:</span>
+            <input type="password" name="corfimacaoSenhaNova" placeholder="Confirme sua nova senha..." maxlength="15"/>
+          </div>
+        </div>
+        <div class="botoes">
+          <a href="/">Voltar</a>
+          <button type="submit">Trocar Senha</button>
+        </div>
+      </form>
+      <p>&#169; Copyright Credmil</p>
+    </div>
+  </body>
+{% endblock %}

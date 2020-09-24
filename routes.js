@@ -34,4 +34,7 @@ routes.get("/cartorio", function (req, res) {
 // Rotas do tipo "Post"
 routes.post("/login", usuario.post);
 
+// Rotas do tipo "Put"
+routes.put("/login", usuario.put);
+
 module.exports = routes;

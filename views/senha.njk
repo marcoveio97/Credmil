@@ -14,7 +14,7 @@
       <div class="primaria">
         <h1>Esqueci a senha</h1>
       </div>
-      <form method="post" action="">
+      <form method="post" action="/login?_method=PUT">
         <div class="secundaria">
           <div>
             <span>E-mail:</span>
@@ -22,11 +22,11 @@
           </div>
           <div>
             <span>Nova senha:</span>
-            <input type="password" name="senhaNova" placeholder="Digite sua nova senha..." maxlength="15"/>
+            <input type="password" name="senha" placeholder="Digite sua nova senha..." maxlength="15"/>
           </div>
           <div>
             <span>Confirmar nova senha:</span>
-            <input type="password" name="corfimacaoSenhaNova" placeholder="Confirme sua nova senha..." maxlength="15"/>
+            <input type="password" name="confirmaSenha" placeholder="Confirme sua nova senha..." maxlength="15"/>
           </div>
         </div>
         <div class="botoes">

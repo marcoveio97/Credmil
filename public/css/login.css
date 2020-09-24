@@ -46,7 +46,8 @@ body {
   margin-left: 40px;
 }
 
-.secundaria {
+.secundaria,
+form {
   background-color: #c0c0c0;
   border-radius: 0px 10px 10px 0px;
   text-align: center;

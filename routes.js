@@ -1,7 +1,13 @@
 const express = require("express");
 const routes = express.Router();
+const cadastro = require("./cadastro");
 
+// Rotas do tipo "Get"
 routes.get("/", function (req, res) {
+  return res.redirect("/login");
+});
+
+routes.get("/login", function (req, res) {
   return res.sendFile(__dirname + "/views/login.html");
 });
 
@@ -20,8 +26,12 @@ routes.get("/cliente", function (req, res) {
 routes.get("/banco", function (req, res) {
   return res.sendFile(__dirname + "/views/banco.html");
 });
+
 routes.get("/cartorio", function (req, res) {
   return res.sendFile(__dirname + "/views/cartorio.html");
 });
+
+// Rotas do tipo "Post"
+routes.post("/login", cadastro.post);
 
 module.exports = routes;

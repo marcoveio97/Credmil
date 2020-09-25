@@ -54,14 +54,12 @@ exports.put = function (req, res) {
   const { email } = req.body;
   const usuarios = data.usuarios;
 
-  const usuarioEncontrado = encontreUsuario(usuarios);
+  const usuarioEncontrado = encontreUsuario(usuarios, email);
 
-  function encontreUsuario(usuarios, foundIndex) {
+  function encontreUsuario(usuarios, email) {
     for (let usuario of usuarios) {
-      if (email == usuario.email) {
+      if (usuario.email == email) {
         return usuario;
-      } else {
-        return res.send("E-mail não encontrado...");
       }
     }
   }
@@ -71,7 +69,11 @@ exports.put = function (req, res) {
     ...req.body,
   };
 
-  data.usuarios = usuario;
+  for (let i = 0; i < data.usuarios.length; i++) {
+    if (data.usuarios[i].email == usuario.email) {
+      data.usuarios[i] = usuario;
+    }
+  }
 
   fs.writeFile("data.json", JSON.stringify(data, null, 2), function (err) {
     if (err) {

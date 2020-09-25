@@ -1,13 +1,48 @@
 {
-  "usuarios": {
-    "id": 1,
-    "nome": "Marcos Vinicios",
-    "sobrenome": "Silva",
-    "cpf": "11122233344",
-    "nascimento": "2020-12-31",
-    "email": "mvcosta.silva1997@gmail.com",
-    "confirmaEmail": "mvcosta.silva1997@gmail.com",
-    "senha": "12345",
-    "confirmaSenha": "12345"
-  }
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Marcos Vinicios",
+      "sobrenome": "Silva",
+      "cpf": "11122233344",
+      "nascimento": "2020-12-31",
+      "email": "mvcosta.silva1997@gmail.com",
+      "confirmaEmail": "mvcosta.silva1997@gmail.com",
+      "senha": "1234",
+      "confirmaSenha": "1234"
+    },
+    {
+      "id": 2,
+      "nome": "Luccas",
+      "sobrenome": "Silva",
+      "cpf": "11122233344",
+      "nascimento": "2020-12-31",
+      "email": "luccas.silva@gmail.com",
+      "confirmaEmail": "luccas.silva@gmail.com",
+      "senha": "12345",
+      "confirmaSenha": "12345"
+    },
+    {
+      "id": 3,
+      "nome": "Vitoria",
+      "sobrenome": "Magalhaes",
+      "cpf": "11111111111",
+      "nascimento": "2019-11-30",
+      "email": "vitoria@gmail.com",
+      "confirmaEmail": "vitoria@gmail.com",
+      "senha": "1234",
+      "confirmaSenha": "1234"
+    },
+    {
+      "id": 4,
+      "nome": "Guilherme",
+      "sobrenome": "Viado",
+      "cpf": "33333333333",
+      "nascimento": "2020-12-31",
+      "email": "guilherme.viado@gmail.com",
+      "confirmaEmail": "guilherme.viado@gmail.com",
+      "senha": "12345",
+      "confirmaSenha": "12345"
+    }
+  ]
 }

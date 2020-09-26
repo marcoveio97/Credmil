@@ -23,7 +23,6 @@ exports.post = function (req, res) {
   } = req.body;
 
   const id = Number(data.usuarios.length + 1);
-
   const cpf = CPF.replace(/\D+/g, "");
 
   if (senha == confirmaSenha && email == confirmaEmail) {

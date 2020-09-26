@@ -14,7 +14,7 @@ exports.post = function (req, res) {
   let {
     nome,
     sobrenome,
-    cpf,
+    CPF,
     nascimento,
     email,
     confirmaEmail,
@@ -24,7 +24,9 @@ exports.post = function (req, res) {
 
   const id = Number(data.usuarios.length + 1);
 
-  if (senha == confirmaSenha) {
+  const cpf = CPF.replace(/\D+/g, "");
+
+  if (senha == confirmaSenha && email == confirmaEmail) {
     data.usuarios.push({
       id,
       nome,
@@ -37,7 +39,7 @@ exports.post = function (req, res) {
       confirmaSenha,
     });
   } else {
-    return res.send("Senhas diferentes...");
+    return res.send("Senha ou E-mail diferentes...");
   }
 
   fs.writeFile("data.json", JSON.stringify(data, null, 2), function (err) {

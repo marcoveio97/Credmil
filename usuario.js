@@ -23,9 +23,86 @@ exports.post = function (req, res) {
   } = req.body;
 
   const id = Number(data.usuarios.length + 1);
-  const cpf = CPF.replace(/\D+/g, "");
+  const cpf = validaCPF(CPF);
 
-  if (senha == confirmaSenha && email == confirmaEmail) {
+  function validaCPF(cpf) {
+    cpf = cpf.replace(/\D+/g, "");
+
+    if (
+      !cpf ||
+      cpf.length != 11 ||
+      cpf == "00000000000" ||
+      cpf == "11111111111" ||
+      cpf == "22222222222" ||
+      cpf == "33333333333" ||
+      cpf == "44444444444" ||
+      cpf == "55555555555" ||
+      cpf == "66666666666" ||
+      cpf == "77777777777" ||
+      cpf == "88888888888" ||
+      cpf == "99999999999"
+    ) {
+      return false;
+    }
+
+    if (!validaPrimeiroDigito(cpf)) {
+      return false;
+    }
+
+    if (!validaSegundoDigito(cpf)) {
+      return false;
+    }
+
+    return cpf;
+  }
+
+  function validaPrimeiroDigito(cpf) {
+    let soma = 0;
+
+    for (let i = 0; i < cpf.length - 2; i++) {
+      soma += cpf[i] * (cpf.length - 1 - i);
+    }
+
+    soma = (soma * 10) % 11;
+
+    if (soma == 10 || soma == 11) {
+      soma = 0;
+    }
+
+    if (soma != cpf[9]) {
+      return false;
+    }
+
+    return true;
+  }
+
+  function validaSegundoDigito(cpf) {
+    let soma = 0;
+
+    for (let i = 0; i < cpf.length - 1; i++) {
+      soma += cpf[i] * (cpf.length - i);
+    }
+
+    soma = (soma * 10) % 11;
+
+    if (soma == 10 || soma == 11) {
+      soma = 0;
+    }
+
+    if (soma != cpf[10]) {
+      return false;
+    }
+
+    return true;
+  }
+
+  if (cpf == false) {
+    return res.send("CPF inválido...");
+  } else if (senha != confirmaSenha) {
+    return res.send("Senhas não coincidem...");
+  } else if (email != confirmaEmail) {
+    return res.send("E-mails não coincidem...");
+  } else {
     data.usuarios.push({
       id,
       nome,
@@ -37,8 +114,6 @@ exports.post = function (req, res) {
       senha,
       confirmaSenha,
     });
-  } else {
-    return res.send("Senha ou E-mail diferentes...");
   }
 
   fs.writeFile("data.json", JSON.stringify(data, null, 2), function (err) {

@@ -6,16 +6,6 @@
     <link rel="stylesheet" href="css/cadastro.css"/>
     <link rel="shortcut icon" href="img/credmil_icone.ico" type="image/x-icon"/>
   </head>
-  <script>
-    function mascara_cpf() {
-      const cpf = document.getElementById("cpf");
-      if (cpf.value.length == 3 || cpf.value.length == 7) {
-        cpf.value += ".";
-      } else if (cpf.value.length == 11) {
-        cpf.value += "-";
-      }
-    }
-  </script>
 {% endblock %}
 
 {% block body %}
@@ -74,5 +64,7 @@
       </form>
       <p>&#169; Copyright Credmil</p>
     </div>
+
+    <script src="js/script.js"></script>
   </body>
 {% endblock %}

@@ -1,6 +1,7 @@
 const express = require("express");
 const routes = express.Router();
-const usuario = require("./usuario");
+const cadastro = require("./cadastro");
+const login = require("./login");
 
 // Rotas do tipo "Get"
 routes.get("/", function (req, res) {
@@ -32,9 +33,15 @@ routes.get("/cartorio", function (req, res) {
 });
 
 // Rotas do tipo "Post"
-routes.post("/login", usuario.post);
+routes.post("/login", cadastro.post);
+
+routes.post("/cliente", login.post);
+
+routes.post("/banco", login.post);
+
+routes.post("/cartorio", login.post);
 
 // Rotas do tipo "Put"
-routes.put("/login", usuario.put);
+routes.put("/login", cadastro.put);
 
 module.exports = routes;

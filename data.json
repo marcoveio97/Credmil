@@ -24,14 +24,14 @@
     },
     {
       "id": 3,
-      "nome": "Luccas",
+      "nome": "Luccas ",
       "sobrenome": "Lombardi",
-      "cpf": "44444444444",
-      "nascimento": "2020-01-01",
+      "cpf": "45667746867",
+      "nascimento": "1997-10-24",
       "email": "luccas.lombardi@gmail.com",
       "confirmaEmail": "luccas.lombardi@gmail.com",
-      "senha": "1234",
-      "confirmaSenha": "1234"
+      "senha": "12345",
+      "confirmaSenha": "12345"
     }
   ]
 }

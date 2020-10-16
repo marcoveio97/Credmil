@@ -90,10 +90,20 @@ header {
   margin-bottom: 0px;
 }
 
+.menuLateral a.active {
+  background-color: #192436;
+}
+
 .infoMenu {
   background-color: #ffffff;
   padding: 30px;
   position: relative;
+}
+
+.welcome {
+  text-align: center;
+  position: relative;
+  top: 80px;
 }
 
 .conteudoEnviarProposta h1 {

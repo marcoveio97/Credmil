@@ -1,12 +1,10 @@
-function mostrarAtivo(tag) {
-  const menuLateral = document.querySelector(".menuLateral");
-  const tagA = menuLateral.querySelectorAll("a");
+const currentPage = location.pathname;
+const menuItens = document.querySelectorAll(".menuLateral a");
 
-  for (i = 0; i < tagA.length; i++) {
-    tagA[i].style.backgroundColor = "";
+for (item of menuItens) {
+  if (currentPage.includes(item.getAttribute("href"))) {
+    item.classList.add("active");
   }
-
-  tag.style.backgroundColor = "#192436";
 }
 
 function mascara_cpf() {

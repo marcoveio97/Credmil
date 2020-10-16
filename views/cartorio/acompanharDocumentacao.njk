@@ -1,0 +1,54 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <head>
+        <title>Acompanhar Documentação - Credmil</title>
+        <link rel="stylesheet" href="/css/cartorio.css"/>
+        <link rel="shortcut icon" href="/img/credmil_icone.ico" type="image/x-icon"/>
+    </head>
+{% endblock %}
+
+{% block body %}
+    <body>
+        <header>
+            <div class="logo">
+                <a href="/cartorio"><img src="/img/credmil_logo.png" alt="Logo Credmil"/></a>
+            </div>
+            <div class="nome">Marcos Silva</div>
+            <div class="info">
+                <span>ms</span>
+            </div>
+        </header>
+
+        <div class="conteudo">
+            <div class="menuLateral">
+                <a href="/cartorio/selecionar-cliente" onclick="mostrarAtivo(this);">Selecionar Cliente</a>
+                <a href="/cartorio/central-documentos" onclick="mostrarAtivo(this);">Central de Documentos</a>
+                <a href="/cartorio/acompanhar-documentacao" onclick="mostrarAtivo(this);">Acompanhar Documentação</a>
+            </div>
+            <div class="infoMenu">
+                <div class="conteudoAcompanharDocumentacao">
+                    <h1>Acompanhar Documentação</h1>
+                    <p>
+                        - RG;
+                    </p>
+                    <p>
+                        - Certidão de Casamento;
+                    </p>
+                    <p>
+                        - Documento de Financiamento;
+                    </p>
+                    <p>
+                        - Documentação do Imóvel;
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&#169; Copyright Credmil</p>
+        </footer>
+
+        <script src="/js/scripts.js"></script>
+    </body>
+{% endblock %}

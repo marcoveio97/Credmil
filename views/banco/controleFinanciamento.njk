@@ -2,8 +2,8 @@
 
 {% block head %}
     <head>
-        <title>Acompanhar Financiamento - Credmil</title>
-        <link rel="stylesheet" href="/css/cliente.css"/>
+        <title>Controle de Financiamento - Credmil</title>
+        <link rel="stylesheet" href="/css/banco.css"/>
         <link rel="shortcut icon" href="/img/credmil_icone.ico" type="image/x-icon"/>
     </head>
 {% endblock %}
@@ -12,7 +12,7 @@
     <body>
         <header>
             <div class="logo">
-                <a href="/cliente"><img src="/img/credmil_logo.png" alt="Logo Credmil"/></a>
+                <a href="/banco"><img src="/img/credmil_logo.png" alt="Logo Credmil"/></a>
             </div>
             <div class="nome">Marcos Silva</div>
             <div class="info">
@@ -22,12 +22,13 @@
 
         <div class="conteudo">
             <div class="menuLateral">
-                <a href="/cliente/enviar-proposta" onclick="mostrarAtivo(this);">Enviar Proposta</a>
-                <a href="/cliente/central-documentos" onclick="mostrarAtivo(this);">Central de Documentos</a>
-                <a href="/cliente/acompanhar-financiamento" onclick="mostrarAtivo(this);">Acompanhar Financiamento</a>
+                <a href="/banco/selecionar-cliente">Selecionar Cliente</a>
+                <a href="/banco/central-documentos">Central de Documentos</a>
+                <a href="/banco/controle-financiamento">Controle de Financiamento</a>
+                <a href="/banco/confeccao-contrato">Confecção de Contrato</a>
             </div>
             <div class="infoMenu">
-                <div class="conteudoAcompanharFinanciamento">
+                <div class="conteudoControleFinanciamento">
                     <h1>Acompanhar Financiamento</h1>
                     <p>
                         - Envio de Proposta;

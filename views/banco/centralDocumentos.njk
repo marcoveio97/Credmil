@@ -1,0 +1,64 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <head>
+        <title>Central de Documentos - Credmil</title>
+        <link rel="stylesheet" href="/css/banco.css"/>
+        <link rel="shortcut icon" href="/img/credmil_icone.ico" type="image/x-icon"/>
+    </head>
+{% endblock %}
+
+{% block body %}
+    <body>
+        <header>
+            <div class="logo">
+                <a href="/banco"><img src="/img/credmil_logo.png" alt="Logo Credmil"/></a>
+            </div>
+            <div class="nome">Marcos Silva</div>
+            <div class="info">
+                <span>ms</span>
+            </div>
+        </header>
+
+        <div class="conteudo">
+            <div class="menuLateral">
+                <a href="/banco/selecionar-cliente">Selecionar Cliente</a>
+                <a href="/banco/central-documentos">Central de Documentos</a>
+                <a href="/banco/controle-financiamento">Controle de Financiamento</a>
+                <a href="/banco/confeccao-contrato">Confecção de Contrato</a>
+            </div>
+            <div class="infoMenu">
+                <div class="conteudoCentralDocumentos">
+                    <h1>Central de Documentos</h1>
+                    <h2>Solicitar documento ao cliente</h2>
+                    <p>Verificar documentos do Cliente:</p>
+                    <br/>
+                    <p>
+                        - RG;
+                    </p>
+                    <p>
+                        - Comprovante de Endereço;
+                    </p>
+                    <p>
+                        - Certidão de Casamento;
+                    </p>
+                    <p>
+                        - CNH;
+                    </p>
+                    <div class="button">
+                        <div class="button">
+                            <button id="recusar" type="submit">Recusar</button>
+                            <button id="aprovar" type="submit">Aprovar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&#169; Copyright Credmil</p>
+        </footer>
+
+        <script src="/js/scripts.js"></script>
+    </body>
+{% endblock %}

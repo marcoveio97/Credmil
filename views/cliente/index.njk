@@ -11,9 +11,6 @@
 {% block body %}
   <body>
     <header>
-      <div class="logo">
-        <a href="/cliente"><img src="img/credmil_logo.png" alt="Logo Credmil"/></a>
-      </div>
       <div class="nome">Marcos Silva</div>
       <div class="info">
         <span>ms</span>
@@ -27,7 +24,9 @@
         <a href="/cliente/acompanhar-financiamento" onclick="mostrarAtivo(this);">Acompanhar Financiamento</a>
       </div>
       <div class="infoMenu">
-        <div class="conteudoIndex"></div>
+        <div class="welcome">
+          <img src="img/credmil_logo3.png" alt="Logo Credmil"/>
+        </div>
       </div>
     </div>
 
@@ -35,6 +34,6 @@
       <p>&#169; Copyright Credmil</p>
     </footer>
 
-    <script src="js/scripts.js"></script>
+    <script src="/js/scripts.js"></script>
   </body>
 {% endblock %}

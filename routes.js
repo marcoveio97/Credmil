@@ -24,8 +24,36 @@ routes.get("/banco", function (req, res) {
   return res.render("banco/index");
 });
 
+routes.get("/banco/selecionar-cliente", function (req, res) {
+  return res.render("banco/selecionarCliente");
+});
+
+routes.get("/banco/central-documentos", function (req, res) {
+  return res.render("banco/centralDocumentos");
+});
+
+routes.get("/banco/controle-financiamento", function (req, res) {
+  return res.render("banco/controleFinanciamento");
+});
+
+routes.get("/banco/confeccao-contrato", function (req, res) {
+  return res.render("banco/confeccaoContrato");
+});
+
 routes.get("/cartorio", function (req, res) {
   return res.render("cartorio/index");
+});
+
+routes.get("/cartorio/selecionar-cliente", function (req, res) {
+  return res.render("cartorio/selecionarCliente");
+});
+
+routes.get("/cartorio/central-documentos", function (req, res) {
+  return res.render("cartorio/centralDocumentos");
+});
+
+routes.get("/cartorio/acompanhar-documentacao", function (req, res) {
+  return res.render("cartorio/acompanharDocumentacao");
 });
 
 routes.get("/cliente", function (req, res) {

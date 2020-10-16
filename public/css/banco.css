@@ -90,8 +90,132 @@ header {
   margin-bottom: 0px;
 }
 
+.menuLateral a.active {
+  background-color: #192436;
+}
+
 .infoMenu {
   background-color: #ffffff;
+  padding: 30px;
+  position: relative;
+}
+
+.welcome {
+  text-align: center;
+  position: relative;
+  top: 80px;
+}
+
+.conteudoSelecionarCliente h1 {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.conteudoSelecionarCliente p {
+  font-size: 22px;
+  text-align: left;
+  padding-bottom: 50px;
+}
+
+.conteudoSelecionarCliente .select {
+  text-align: center;
+}
+
+.conteudoSelecionarCliente select {
+  border: 3px solid #000;
+  padding: 5px 20px;
+  border-radius: 3px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.conteudoSelecionarCliente .button {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.conteudoSelecionarCliente .button button {
+  background-color: #192436;
+  color: #ffffff;
+  padding: 25px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.conteudoCentralDocumentos h1 {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.conteudoCentralDocumentos h2 {
+  padding-bottom: 30px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.conteudoCentralDocumentos p {
+  font-size: 22px;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.conteudoCentralDocumentos .button {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.conteudoCentralDocumentos .button button {
+  color: #ffffff;
+  padding: 25px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+#recusar {
+  background-color: #ff0000;
+}
+
+#aprovar {
+  background-color: #00ff00;
+}
+
+.conteudoCentralDocumentos button:last-child {
+  margin-left: 20px;
+}
+
+.conteudoControleFinanciamento h1 {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.conteudoControleFinanciamento p {
+  font-size: 22px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.conteudoConfeccaoContrato h1 {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.conteudoConfeccaoContrato p {
+  font-size: 25px;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.conteudoConfeccaoContrato .button {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.conteudoConfeccaoContrato .button button {
+  background-color: #192436;
+  color: #ffffff;
+  padding: 25px;
+  font-size: 20px;
+  border-radius: 10px;
 }
 
 footer {

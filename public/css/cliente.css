@@ -92,6 +92,71 @@ header {
 
 .infoMenu {
   background-color: #ffffff;
+  padding: 30px;
+  position: relative;
+}
+
+.conteudoEnviarProposta h1 {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.conteudoEnviarProposta p {
+  font-size: 22px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.conteudoEnviarProposta .button {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.conteudoEnviarProposta .button button {
+  background-color: #192436;
+  color: #ffffff;
+  padding: 25px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.conteudoEnviarProposta button:last-child {
+  margin-left: 20px;
+}
+
+.conteudoCentralDocumentos h1 {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.conteudoCentralDocumentos p {
+  font-size: 22px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.conteudoCentralDocumentos .button {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.conteudoCentralDocumentos .button button {
+  background-color: #192436;
+  color: #ffffff;
+  padding: 25px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.conteudoAcompanharFinanciamento h1 {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.conteudoAcompanharFinanciamento p {
+  font-size: 22px;
+  text-align: left;
+  padding-bottom: 20px;
 }
 
 footer {

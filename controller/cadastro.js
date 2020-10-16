@@ -1,6 +1,6 @@
 const fs = require("fs");
-const data = require("./data.json");
-const { validaCPF } = require("./funcoes");
+const data = require("../data.json");
+const { validaCPF } = require("../utils");
 
 // Post
 exports.post = function (req, res) {

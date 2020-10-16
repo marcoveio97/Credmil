@@ -1,0 +1,46 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <head>
+        <title>Enviar Proposta - Credmil</title>
+        <link rel="stylesheet" href="/css/cliente.css"/>
+        <link rel="shortcut icon" href="/img/credmil_icone.ico" type="image/x-icon"/>
+    </head>
+{% endblock %}
+
+{% block body %}
+    <body>
+        <header>
+            <div class="logo">
+                <a href="/cliente"><img src="/img/credmil_logo.png" alt="Logo Credmil"/></a>
+            </div>
+            <div class="nome">Marcos Silva</div>
+            <div class="info">
+                <span>ms</span>
+            </div>
+        </header>
+
+        <div class="conteudo">
+            <div class="menuLateral">
+                <a href="/cliente/enviar-proposta" onclick="mostrarAtivo(this);">Enviar Proposta</a>
+                <a href="/cliente/central-documentos" onclick="mostrarAtivo(this);">Central de Documentos</a>
+                <a href="/cliente/acompanhar-financiamento" onclick="mostrarAtivo(this);">Acompanhar Financiamento</a>
+            </div>
+            <div class="infoMenu">
+                <div class="conteudoCentralDocumentos">
+                    <h1>Central de Documentos</h1>
+                    <p>Nesta tela você poderá anexar os documentos solicitados pelo gerente. Para anexar algum arquivo, clique em "Anexar documentos".</p>
+                    <div class="button">
+                        <button type="submit">Anexar Documento</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&#169; Copyright Credmil</p>
+        </footer>
+
+        <script src="js/scripts.js"></script>
+    </body>
+{% endblock %}

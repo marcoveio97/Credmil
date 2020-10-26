@@ -43,6 +43,7 @@ header {
   border-radius: 50%;
   color: #192436;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
 }
 
 .info span {
@@ -52,6 +53,36 @@ header {
   right: 7px;
   bottom: 10px;
   text-transform: uppercase;
+}
+
+.sair {
+  width: 95px;
+  height: 45px;
+  background-color: #fff;
+  position: absolute;
+  right: 86px;
+  top: 75px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sair.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sair a {
+  text-decoration: none;
+  position: relative;
+  top: 12px;
+  letter-spacing: 0.5px;
+}
+
+.sair a:hover {
+  color: #ff0000;
 }
 
 .conteudo {

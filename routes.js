@@ -2,6 +2,7 @@ const express = require("express");
 const routes = express.Router();
 const cadastro = require("./controller/cadastro");
 const login = require("./controller/login");
+const data = require("./data.json");
 
 // Rotas do tipo "Get"
 routes.get("/", function (req, res) {
@@ -57,7 +58,7 @@ routes.get("/cartorio/acompanhar-documentacao", function (req, res) {
 });
 
 routes.get("/cliente", function (req, res) {
-  return res.render("cliente/index");
+  return res.render("cliente/index", { user: data.usuarios[0] });
 });
 
 routes.get("/cliente/enviar-proposta", function (req, res) {

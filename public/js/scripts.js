@@ -15,3 +15,15 @@ function mascara_cpf() {
     cpf.value += "-";
   }
 }
+
+const info = document.querySelector(".info");
+const sair = document.querySelector(".sair");
+
+info.addEventListener("click", function() {
+  if(sair.classList == "sair") {
+    sair.classList.add("active");
+  }
+  else if (sair.classList == "sair active") {
+    sair.classList.remove("active");
+  }
+});

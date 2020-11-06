@@ -2,7 +2,7 @@
 
 {% block head %}
     <head>
-        <title>Central de Documentos - Credmil</title>
+        <title>Confecção de Contrato - Credmil</title>
         <link rel="stylesheet" href="/css/banco.css"/>
         <link rel="shortcut icon" href="/img/credmil_icone.ico" type="image/x-icon"/>
     </head>
@@ -12,7 +12,7 @@
     <body>
         <header>
             <div class="logo">
-                <a href="/banco"><img src="/img/credmil_logo.png" alt="Logo Credmil"/></a>
+                <a href="/cliente"><img src="/img/credmil_logo.png" alt="Logo Credmil"/></a>
             </div>
             <div class="nome">Marcos Silva</div>
             <div class="info">
@@ -25,17 +25,20 @@
 
         <div class="conteudo">
             <div class="menuLateral">
-                <a href="/banco/selecionar-cliente">Selecionar Cliente</a>
-                <a href="/banco/central-documentos">Central de Documentos</a>
-                <a href="/banco/confeccao-contrato">Confecção de Contrato</a>
-                <a href="/banco/controle-financiamento">Controle de Financiamento</a>
+                <a href="/cliente/enviar-proposta">Enviar Proposta</a>
+                <a href="/cliente/central-documentos">Central de Documentos</a>
+                <a href="/cliente/confeccao-contrato">Confecção de Contrato</a>
+                <a href="/cliente/acompanhar-financiamento">Acompanhar Financiamento</a>
             </div>
             <div class="infoMenu">
-                <div class="conteudoCentralDocumentos">
-                    <h1>Central de Documentos</h1>
-                    <p>Na central de documentos, clique em "Baixar Documentos" para fazer o download dos documentos do cliente;</p>
+                <div class="conteudoConfeccaoContrato">
+                    <h1>Confecção do Contrato</h1>
+                    <p>Em confecção de contrato, você irá baixar o contrato assinar e anexa-lo novamente para enviar ao cartório;</p>
                     <div class="button">
-                        <button type="submit">Baixar Documentos</button>
+                        <div class="button">
+                            <button type="submit">Baixar Contrato</button>
+                            <button type="submit">Anexar Contrato</button>
+                        </div>
                     </div>
                 </div>
             </div>

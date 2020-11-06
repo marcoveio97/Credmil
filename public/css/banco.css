@@ -132,6 +132,7 @@ header {
 .infoMenu {
   background-color: #ffffff;
   padding: 30px;
+  padding-top: 50px;
 }
 
 .welcome {
@@ -141,7 +142,7 @@ header {
 }
 
 .conteudoSelecionarCliente h1 {
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   text-align: center;
 }
 
@@ -156,19 +157,30 @@ header {
 }
 
 .conteudoSelecionarCliente select {
-  border: 3px solid #000;
+  border: 2px solid #000;
   padding: 5px 20px;
   border-radius: 3px;
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
-.conteudoSelecionarCliente .button {
+.conteudoCentralDocumentos h1 {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.conteudoCentralDocumentos p {
+  font-size: 22px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.conteudoCentralDocumentos .button {
   padding-top: 40px;
   text-align: center;
 }
 
-.conteudoSelecionarCliente .button button {
+.conteudoCentralDocumentos .button button {
   background-color: #192436;
   color: #ffffff;
   padding: 25px;
@@ -176,45 +188,31 @@ header {
   border-radius: 10px;
 }
 
-.conteudoCentralDocumentos h1 {
-  padding-bottom: 30px;
+.conteudoCentralDocumentos button:last-child {
+  margin-left: 20px;
+}
+
+.conteudoConfeccaoContrato h1 {
+  padding-bottom: 60px;
   text-align: center;
 }
 
-.conteudoCentralDocumentos h2 {
-  padding-bottom: 30px;
-  text-align: center;
-  text-decoration: underline;
-}
-
-.conteudoCentralDocumentos p {
+.conteudoConfeccaoContrato p {
   font-size: 22px;
   text-align: left;
-  padding-bottom: 10px;
+  padding-bottom: 60px;
 }
 
-.conteudoCentralDocumentos .button {
-  padding-top: 20px;
+.conteudoConfeccaoContrato .button {
   text-align: center;
 }
 
-.conteudoCentralDocumentos .button button {
+.conteudoConfeccaoContrato .button button {
+  background-color: #192436;
   color: #ffffff;
   padding: 25px;
   font-size: 20px;
   border-radius: 10px;
-}
-
-#recusar {
-  background-color: #ff0000;
-}
-
-#aprovar {
-  background-color: #00ff00;
-}
-
-.conteudoCentralDocumentos button:last-child {
-  margin-left: 20px;
 }
 
 .conteudoControleFinanciamento h1 {
@@ -225,31 +223,36 @@ header {
 .conteudoControleFinanciamento p {
   font-size: 22px;
   text-align: left;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
-.conteudoConfeccaoContrato h1 {
-  padding-bottom: 60px;
-  text-align: center;
-}
-
-.conteudoConfeccaoContrato p {
-  font-size: 25px;
+.conteudoControleFinanciamento #texto2 {
+  font-size: 27px;
   text-align: left;
-  padding-bottom: 10px;
 }
 
-.conteudoConfeccaoContrato .button {
-  padding-top: 40px;
+.conteudoControleFinanciamento .button {
   text-align: center;
 }
 
-.conteudoConfeccaoContrato .button button {
-  background-color: #192436;
+.conteudoControleFinanciamento .button button {
   color: #ffffff;
   padding: 25px;
   font-size: 20px;
   border-radius: 10px;
+  margin-right: 5px;
+}
+
+#aprovado {
+  background-color: #00ff00;
+}
+
+#emProcessamento {
+  background-color: #ff5e00;
+}
+
+#reprovado {
+  background-color: #ff0000;
 }
 
 footer {

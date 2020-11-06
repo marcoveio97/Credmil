@@ -108,7 +108,7 @@ header {
   font-size: 20px;
   background-color: #999999;
   padding: 20px;
-  margin: 50px 0px;
+  margin-bottom: 58px;
   border-radius: 10px;
   box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.77);
 }
@@ -125,13 +125,14 @@ header {
   background-color: #192436;
   border-radius: 10px 0px 0px 10px;
   padding: 20px;
-  margin: 50px 0px;
+  margin-bottom: 58px;
   margin-right: -50px;
 }
 
 .infoMenu {
   background-color: #ffffff;
   padding: 30px;
+  padding-top: 50px;
 }
 
 .welcome {
@@ -141,7 +142,7 @@ header {
 }
 
 .conteudoEnviarProposta h1 {
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   text-align: center;
 }
 
@@ -169,18 +170,22 @@ header {
 }
 
 .conteudoCentralDocumentos h1 {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   text-align: center;
+}
+
+.conteudoCentralDocumentos #texto1 {
+  padding-bottom: 20px;
 }
 
 .conteudoCentralDocumentos p {
   font-size: 22px;
   text-align: left;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 
 .conteudoCentralDocumentos .button {
-  padding-top: 40px;
+  padding-top: 30px;
   text-align: center;
 }
 
@@ -192,15 +197,43 @@ header {
   border-radius: 10px;
 }
 
-.conteudoAcompanharFinanciamento h1 {
+.conteudoConfeccaoContrato h1 {
   padding-bottom: 60px;
+  text-align: center;
+}
+
+.conteudoConfeccaoContrato p {
+  font-size: 22px;
+  text-align: left;
+  padding-bottom: 60px;
+}
+
+.conteudoConfeccaoContrato .button {
+  text-align: center;
+}
+
+.conteudoConfeccaoContrato .button button {
+  background-color: #192436;
+  color: #ffffff;
+  padding: 25px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.conteudoAcompanharFinanciamento h1 {
+  padding-bottom: 40px;
   text-align: center;
 }
 
 .conteudoAcompanharFinanciamento p {
   font-size: 22px;
   text-align: left;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
+}
+
+.conteudoAcompanharFinanciamento #texto2 {
+  font-size: 27px;
+  text-align: left;
 }
 
 footer {

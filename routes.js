@@ -53,8 +53,8 @@ routes.get("/cartorio/central-documentos", function (req, res) {
   return res.render("cartorio/centralDocumentos");
 });
 
-routes.get("/cartorio/acompanhar-documentacao", function (req, res) {
-  return res.render("cartorio/acompanharDocumentacao");
+routes.get("/cartorio/confeccao-contrato", function (req, res) {
+  return res.render("cartorio/confeccaoContrato");
 });
 
 routes.get("/cliente", function (req, res) {
@@ -67,6 +67,10 @@ routes.get("/cliente/enviar-proposta", function (req, res) {
 
 routes.get("/cliente/central-documentos", function (req, res) {
   return res.render("cliente/centralDocumentos");
+});
+
+routes.get("/cliente/confeccao-contrato", function (req, res) {
+  return res.render("cliente/confeccaoContrato");
 });
 
 routes.get("/cliente/acompanhar-financiamento", function (req, res) {

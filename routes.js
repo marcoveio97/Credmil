@@ -53,8 +53,8 @@ routes.get("/cartorio/central-documentos", function (req, res) {
   return res.render("cartorio/centralDocumentos");
 });
 
-routes.get("/cartorio/confeccao-contrato", function (req, res) {
-  return res.render("cartorio/confeccaoContrato");
+routes.get("/cartorio/registro-contrato", function (req, res) {
+  return res.render("cartorio/registroContrato");
 });
 
 routes.get("/cliente", function (req, res) {

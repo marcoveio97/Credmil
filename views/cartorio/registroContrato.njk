@@ -5,6 +5,7 @@
         <title>Registro de Contrato - Credmil</title>
         <link rel="stylesheet" href="/css/cartorio.css"/>
         <link rel="shortcut icon" href="/img/credmil_icone.ico" type="image/x-icon"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
 {% endblock %}
 
@@ -35,7 +36,7 @@
                     <p>Em registro do contrato, você irá fazer upload do contrato do cliente já registrado;</p>
                     <div class="button">
                         <div class="button">
-                            <button type="submit">Enviar Contrato</button>
+                            <span>Enviar Contrato</span>
                         </div>
                     </div>
                 </div>
@@ -45,6 +46,15 @@
         <footer>
             <p>&#169; Copyright Credmil</p>
         </footer>
+
+        <div class="modal-overlay">
+            <div class="modal">
+                <a class="close-modal">
+                    <span class="material-icons">close</span>
+                </a>
+                <p>Arraste seus arquivos aqui...</p>
+            </div>
+        </div>
 
         <script src="/js/scripts.js"></script>
     </body>

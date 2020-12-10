@@ -5,6 +5,7 @@
         <title>Confecção de Contrato - Credmil</title>
         <link rel="stylesheet" href="/css/banco.css"/>
         <link rel="shortcut icon" href="/img/credmil_icone.ico" type="image/x-icon"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
 {% endblock %}
 
@@ -36,7 +37,7 @@
                     <p>Em confecção de contrato, após confeccionar o mesmo, anexar nesta tela e notificar o cliente.</p>
                     <div class="button">
                         <div class="button">
-                            <button type="submit">Anexar Contrato</button>
+                            <span>Anexar Contrato</span>
                         </div>
                     </div>
                 </div>
@@ -46,6 +47,15 @@
         <footer>
             <p>&#169; Copyright Credmil</p>
         </footer>
+
+        <div class="modal-overlay">
+            <div class="modal">
+                <a class="close-modal">
+                    <span class="material-icons">close</span>
+                </a>
+                <p>Arraste seus arquivos aqui...</p>
+            </div>
+        </div>
 
         <script src="/js/scripts.js"></script>
     </body>

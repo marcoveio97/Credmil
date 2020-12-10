@@ -5,6 +5,7 @@
         <title>Central de Documentos - Credmil</title>
         <link rel="stylesheet" href="/css/cliente.css"/>
         <link rel="shortcut icon" href="/img/credmil_icone.ico" type="image/x-icon"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
 {% endblock %}
 
@@ -53,7 +54,7 @@
                         - Laudo do Imóvel;
                     </p>
                     <div class="button">
-                        <button type="submit">Anexar Documentos</button>
+                        <span>Anexar Documentos</span>
                     </div>
                 </div>
             </div>
@@ -62,6 +63,15 @@
         <footer>
             <p>&#169; Copyright Credmil</p>
         </footer>
+
+        <div class="modal-overlay">
+            <div class="modal">
+                <a class="close-modal">
+                    <span class="material-icons">close</span>
+                </a>
+                <p>Arraste seus arquivos aqui...</p>
+            </div>
+        </div>
 
         <script src="/js/scripts.js"></script>
     </body>

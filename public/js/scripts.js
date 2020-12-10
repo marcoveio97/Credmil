@@ -27,3 +27,16 @@ info.addEventListener("click", function() {
     sair.classList.remove("active");
   }
 });
+
+const modalOverlay = document.querySelector('.modal-overlay');
+const botao = document.querySelector('.button span');
+
+botao.addEventListener('click', function() {
+  modalOverlay.classList.add('active');
+});
+
+const closeModal = document.querySelector('.close-modal');
+
+closeModal.addEventListener('click', function() {
+    modalOverlay.classList.remove('active');
+});

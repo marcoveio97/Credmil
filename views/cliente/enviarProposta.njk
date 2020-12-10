@@ -5,6 +5,7 @@
         <title>Enviar Proposta - Credmil</title>
         <link rel="stylesheet" href="/css/cliente.css"/>
         <link rel="shortcut icon" href="/img/credmil_icone.ico" type="image/x-icon"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
 {% endblock %}
 
@@ -38,7 +39,7 @@
                     <p>3. Clique em "Enviar Formulário" para anexar o formulário preenchido;</p>
                     <div class="button">
                         <button type="submit">Baixar Formulário</button>
-                        <button type="submit">Enviar Formulário</button>
+                        <span>Enviar Formulário</span>
                     </div>
                 </div>
             </div>
@@ -47,6 +48,15 @@
         <footer>
             <p>&#169; Copyright Credmil</p>
         </footer>
+
+        <div class="modal-overlay">
+            <div class="modal">
+                <a class="close-modal">
+                    <span class="material-icons">close</span>
+                </a>
+                <p>Arraste seus arquivos aqui...</p>
+            </div>
+        </div>
 
         <script src="/js/scripts.js"></script>
     </body>
